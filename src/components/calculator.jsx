@@ -7,7 +7,7 @@ class Calculator extends Component {
   };
 
   style = {
-    margin: '0 auto',
+    margin: '50px auto',
     width: '60%',
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)'
@@ -41,7 +41,6 @@ class Calculator extends Component {
   render() { 
     return (
       <React.Fragment>
-        <h1 className="">Calculator</h1>
         <section style={this.style} className="grid-container">
           <input
             type={"input"}
