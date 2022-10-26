@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap';
+// import { Button } from 'bootstrap';
 import React, { Component } from 'react';
 
 class Calculator extends Component {
@@ -15,21 +15,27 @@ class Calculator extends Component {
 
   input = {
     height: '70px',
-    fontSize: '32px'
+    fontSize: '18px'
   }
 
     item1 = {
     height: '70px',
-    fontSize: '32px',
+    fontSize: '18px',
     gridColumnStart: 1,
     gridColumnEnd: 5,
   }
 
   item0 = {
     height: '70px',
-    fontSize: '32px',
+    fontSize: '18px',
     gridColumnStart: 1,
     gridColumnEnd: 3,
+  }
+
+  orangeItems = {
+    height: '70px',
+    fontSize: '18px',
+    background: '#ff8500',
   }
 
   render() { 
@@ -46,22 +52,22 @@ class Calculator extends Component {
           <input type="button" style={this.input} value="AC" />
           <input type="button" style={this.input} value="+/-" />
           <input type="button" style={this.input} value="%" />
-          <input type="button" style={this.input} value="÷" />
+          <input type="button" style={this.orangeItems} value="÷" />
           <input type="button" style={this.input} value="7" />
           <input type="button" style={this.input} value="8" />
           <input type="button" style={this.input} value="9" />
-          <input type="button" style={this.input} value="x" />
+          <input type="button" style={this.orangeItems} value="x" />
           <input type="button" style={this.input} value="4" />
           <input type="button" style={this.input} value="5" />
           <input type="button" style={this.input} value="6" />
-          <input type="button" style={this.input} value="-" />
+          <input type="button" style={this.orangeItems} value="-" />
           <input type="button" style={this.input} value="1" />
           <input type="button" style={this.input} value="2" />
           <input type="button" style={this.input} value="3" />
-          <input type="button" style={this.input} value="+" />
-          <input type="button" style={this.input} value="0" />
+          <input type="button" style={this.orangeItems} value="+" />
+          <input type="button" style={this.item0} value="0" />
           <input type="button" style={this.input} value="." />
-          <input type="button" style={this.input} value="=" />
+          <input type="button" style={this.orangeItems} value="=" />
         </section>
       </React.Fragment>
     );
@@ -69,8 +75,8 @@ class Calculator extends Component {
 
   formatCount() {
     const { count } = this.state
-    return count === 0 ? 'Zero' : count;
+    return count === 0 ? '0' : count;
   }
 }
- 
+
 export default Calculator;
