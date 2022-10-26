@@ -3,42 +3,46 @@ import React, { Component } from 'react';
 
 class Calculator extends Component {
   state = {
-    count: 0
+    count: 0,
   };
 
   style = {
-    margin: '50px auto',
-    width: '60%',
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)'
-  }
+    margin: "50px auto",
+    width: "60%",
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+  };
 
   input = {
-    height: '70px',
-    fontSize: '18px'
-  }
+    height: "70px",
+    fontSize: "18px",
+    border: ".1px solid #fff",
+  };
 
-    item1 = {
-    height: '70px',
-    fontSize: '18px',
+  item1 = {
+    height: "70px",
+    fontSize: "18px",
     gridColumnStart: 1,
     gridColumnEnd: 5,
-  }
+    border: ".1px solid #fff",
+  };
 
   item0 = {
-    height: '70px',
-    fontSize: '18px',
+    height: "70px",
+    fontSize: "18px",
     gridColumnStart: 1,
     gridColumnEnd: 3,
-  }
+    border: ".1px solid #fff",
+  };
 
   orangeItems = {
-    height: '70px',
-    fontSize: '18px',
-    background: '#ff8500',
-  }
+    height: "70px",
+    fontSize: "18px",
+    background: "#ff9d5c",
+    border: ".1px solid #fff",
+  };
 
-  render() { 
+  render() {
     return (
       <React.Fragment>
         <section style={this.style} className="grid-container">
@@ -73,8 +77,8 @@ class Calculator extends Component {
   }
 
   formatCount() {
-    const { count } = this.state
-    return count === 0 ? '0' : count;
+    const { count } = this.state;
+    return count === 0 ? "0" : count;
   }
 }
 
