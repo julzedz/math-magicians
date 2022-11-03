@@ -19,7 +19,7 @@ const Calculator = () => {
 
   const { total, next, operation } = state;
   return (
-    <Route path='/calculator'>
+    <Route path="/calculator">
       <>
         <section className="grid-container style">
           <input
