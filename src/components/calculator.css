@@ -1,11 +1,12 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
 
 body {
   background-image: url("/public/pexels-yan-krukov-8617742.jpg");
-  background-color: rgba(174, 188, 142, 0.862);
+  background-color: rgba(242, 242, 242, 0.579);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -70,7 +71,7 @@ nav ul {
   font-size: 17px;
   font-weight: 600;
   color: #213d4a;
-  background-color: #fff;
+  background-color: #ffffff81;
 }
 
 header {
@@ -137,8 +138,8 @@ header {
 
 .quote h2 {
   color: #4f6863;
-  text-align:start;
-  padding: .5em;
+  text-align: start;
+  padding: 0.5em;
   width: 70%;
   background-color: #ffffffc5;
   margin: 15% auto;

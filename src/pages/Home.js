@@ -3,7 +3,7 @@ import '../components/calculator.css';
 
 const Home = () => (
   <div className="homepage">
-    <h2>Welcome to our page!</h2>
+    <h2>Welcome To Our Page!</h2>
     <p>
       Mathematics is generally defined as the science that deals with numbers.
       It involves operations among numbers, and it also helps you to calculate
@@ -12,7 +12,7 @@ const Home = () => (
       on mathematical principles in their real-life to experiment with new
       things every day. Many students say ”I hate mathematics” and maths is
       a pointless subject, but it is wrong because without mathematics your life
-      is tough to survive. Math has its applications in every field.
+      is tough to survive. Math has its application in every field.
     </p>
     <p>
       One couldn’t imagine the world without math. Math makes our life
