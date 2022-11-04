@@ -18,6 +18,7 @@ const Calculator = () => {
 
   const { total, next, operation } = state;
   return (
+
     <>
       <section className="grid-container style">
         <input
@@ -141,6 +142,7 @@ const Calculator = () => {
         />
       </section>
     </>
+
   );
 };
 
